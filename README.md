@@ -10,4 +10,4 @@ Este proyecto automatiza el procesamiento de datos de ventas, la generación de 
 ## Instalación
 
 1. Clona el repositorio o descarga los archivos.
-2. Crea un entorno virtual:
+2. Crea un entorno virtual
