@@ -1,0 +1,25 @@
+automatizacion_oficina/
+│
+├── data/                      # Carpeta para almacenar archivos de entrada y salida
+│   ├── ventas.xlsx            # Archivo Excel de entrada
+│   ├── reportes/              # Subcarpeta para almacenar los PDFs generados
+│       └── reporte_ventas.pdf
+│
+├── templates/                 # Plantillas para emails, PDFs u otros documentos
+│   └── email_template.txt     # Plantilla de cuerpo de correo
+│
+├── src/                       # Carpeta para los scripts del proyecto
+│   ├── procesar_datos.py      # Código para procesar datos (e.g., leer Excel)
+│   ├── generar_pdf.py         # Código para crear PDFs
+│   ├── enviar_correo.py       # Código para enviar correos
+│   └── scheduler.py           # Programación de tareas automáticas (opcional)
+│
+├── config/                    # Configuración del proyecto
+│   └── config.py              # Variables de configuración (e.g., credenciales de email)
+│
+├── tests/                     # Pruebas para los módulos
+│   └── test_generar_pdf.py    # Pruebas para el módulo de generación de PDFs
+│
+├── main.py                    # Script principal para ejecutar todo
+├── requirements.txt           # Lista de dependencias del proyecto
+└── README.md                  # Documentación del proyecto

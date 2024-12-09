@@ -1,0 +1,36 @@
+El error que estás recibiendo (`FileNotFoundError: [Errno 2] No such file or directory: 'data/ventas.xlsx'`) indica que el archivo `ventas.xlsx` no se encuentra en la ruta especificada en el código. Esto generalmente ocurre por dos razones comunes:
+
+### 1. **Ruta Incorrecta o Archivo No Existe:**
+   - El archivo `ventas.xlsx` debe estar ubicado en la carpeta `data/` dentro de tu proyecto. Asegúrate de que el archivo exista en esa ubicación. Si la carpeta `data/` o el archivo `ventas.xlsx` no existe, deberás crearla y agregar el archivo en esa ruta.
+   
+   - La estructura de tu proyecto debe verse así:
+     ```
+     automatizacion_oficina/
+     ├── data/
+     │   └── ventas.xlsx
+     └── main.py
+     ```
+   
+   - Si el archivo no existe, crea un archivo `ventas.xlsx` con datos ficticios o reales que el script pueda procesar.
+
+### 2. **Ruta Relativa vs. Ruta Absoluta:**
+   - Si el archivo existe pero está en una ubicación diferente, asegúrate de usar la ruta correcta. Puedes probar utilizando una ruta absoluta para el archivo, como:
+     ```python
+     archivo_ventas = "C:/ruta/a/tu/archivo/ventas.xlsx"
+     ```
+   
+   - Si prefieres seguir usando la ruta relativa (`data/ventas.xlsx`), asegúrate de que el script se ejecute desde la raíz de tu proyecto, es decir, el directorio donde está ubicado el archivo `main.py`.
+
+---
+
+### **Solución**
+1. **Verifica la ubicación del archivo:**
+   - Asegúrate de que el archivo `ventas.xlsx` esté ubicado en la carpeta `data/` dentro de tu proyecto. Si no está allí, créalo o colócalo en la carpeta correcta.
+
+2. **Verifica la ruta:**
+   - Si estás seguro de que el archivo está en la ubicación correcta, asegúrate de ejecutar el script desde la carpeta raíz del proyecto. Si lo estás ejecutando desde otro directorio, la ruta relativa no será válida.
+
+3. **Prueba con una ruta absoluta:**
+   Si sigues teniendo problemas, intenta proporcionar una ruta absoluta para verificar si es un problema con la ruta relativa.
+
+Con estas correcciones, el script debería poder encontrar el archivo correctamente y continuar su ejecución sin problemas.
